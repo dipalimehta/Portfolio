@@ -241,7 +241,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/dipali-img.jpg") top center;
+  background: url("../img/dipali-img.jpg") top right;
   background-size: cover;
 }
 
