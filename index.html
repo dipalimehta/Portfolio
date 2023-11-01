@@ -46,6 +46,26 @@
     .hover-image:hover {
         transform: scale(1.1);
     }
+
+
+
+    /* Create a grid layout */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-auto-rows: 200px;
+      grid-gap: 10px; /* Add this line to specify the gap between columns and rows */
+      
+    }
+
+
+
+    /* Style for individual images */
+    .image-grid img {
+      width: 380px;
+      height: 400px;
+    }
+
 </style>
 </head>
 
@@ -359,8 +379,8 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <!-- Add project section by uncommenting below  -->
-              <!-- <li data-filter="*" class="filter-active">All</li> -->
-              <!-- <li data-filter=".filter-app">Projects</li> -->
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Projects</li>
               <li data-filter=".filter-card">Blogs</li>
               <!-- <li data-filter=".filter-web">Web</li> -->
             </ul>
@@ -406,17 +426,62 @@
     
 
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <a href="https://data-science-guide-is-here.blogspot.com/"> <!-- Add an anchor around the image -->
-              <img src="assets/img/portfolio/data-science.jpg" class="img-fluid" alt="">
-            </a>
+             <a href="https://data-science-guide-is-here.blogspot.com/"> 
+              
+            </a>  
+            <img src="assets/img/portfolio/data-science.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <!-- <a href="assets/img/portfolio/data-science.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a> -->
-              <a href="portfolio-details.html" title="More Details"></a>
+               <a href="assets/img/portfolio/data-science.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a> 
+               <a href="portfolio-details.html" title="More Details"></a> 
             </div>
           </div>
+        </div> -->
+        <div class="image-grid">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://data-science-guide-is-here.blogspot.com/"> 
+              <img src="assets/img/portfolio/data-science.jpg" class="img-fluid" alt="">
+              <h5>Data Science</h5>
+            </a>
+            
+          </div>
+        
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://mlops-tutorial.blogspot.com/"> 
+              <img src="assets/img/portfolio/mlops.jpg" class="img-fluid" alt="">
+              <h5>MLOPS</h5>
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://learn-sql-with-me.blogspot.com/"> 
+              <img src="assets/img/portfolio/sql.png" class="img-fluid" alt="">
+              <h5>SQL</h5>
+            </a>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://data-science-guide-is-here.blogspot.com/"> 
+              <img src="assets/img/portfolio/data-science.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://mlops-tutorial.blogspot.com/"> 
+              <img src="assets/img/portfolio/mlops.jpg" class="img-fluid" alt="">
+            </a>
+          </div>
+        
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <a href="https://learn-sql-with-me.blogspot.com/"> 
+              <img src="assets/img/portfolio/mlops.jpg" class="img-fluid" alt="">
+            </a>
+          </div> -->
+        
+          <!-- Repeat the above structure for additional images if needed -->
         </div>
+        
 
 
         
@@ -440,25 +505,28 @@
             </div>
           </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/mlops.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card"> -->
+            <!-- <div class="portfolio-wrap"> -->
+              <!-- <a href="https://data-science-guide-is-here.blogspot.com/"> 
+                <img src="assets/img/portfolio/mlops.jpg" class="img-fluid" alt="">
+              </a>  -->
+              <!-- <img src="assets/img/portfolio/mlops.jpg" class="img-fluid" alt=""> -->
+              <!-- <div class="portfolio-links"> -->
                 <!-- <a href="assets/img/portfolio/mlops.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a> -->
-                <a href="portfolio-details.html" title="More Details"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"></i></a>
               </div>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/sql.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
+              <div class="portfolio-links"> -->
                 <!-- <a href="assets/img/portfolio/sql.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a> -->
-                <a href="portfolio-details.html" title="More Details"></a>
+                <!-- <a href="portfolio-details.html" title="More Details"></a>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
